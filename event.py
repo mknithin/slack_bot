@@ -17,8 +17,6 @@ slack_app = App(
 
 app_handler = SlackRequestHandler(slack_app)
 
-# slack_app = App(token="xoxb-1370143350000-4915920125136-4S2T9vhaAFhQmpjzZOoExUAq")
-# handler = SlackRequestHandler(slack_app)
 
 @app.post("/slack/events")
 async def slack_events_handler(request: Request):
